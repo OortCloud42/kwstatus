@@ -4,13 +4,12 @@ LDFLAGS = -g
 LIBS = ${MODULES_LIBS} -pthread -lxcb
 CC = gcc
 
-MODULES_LIBS = -lpulse -lm -lmpdclient
+MODULES_LIBS = -lpulse -lm
 MODULES = modules/print\
 					modules/clockm\
 					modules/backlight\
 					modules/battery\
 					modules/pulse\
-					modules/mpd\
 					modules/run_command\
 					modules/disk\
 					modules/interface\
@@ -34,5 +33,5 @@ install: kwstatus
 	cp -f kwstatus ${PREFIX}/bin/kwstatus
 
 clean:
-	rm -f *.o modules/*.o kwstatus
+	rm -f *.o modules/*.o kwstatus config.h
 

@@ -5,7 +5,6 @@ struct modules mdl[] = {
   /* function, .str | .num | .no_delim | .icon */
   /* when .no_delim is set to 1 then no delimeter is added between this and next module */
   /* icon adds icon before text from module */
-  {mpd},
   {battery, .str = "BAT0", .num = 3},
   {pulse},
   {backlight, .str = "intel_backlight"},
@@ -16,7 +15,7 @@ struct modules mdl[] = {
 };
 
 /* bar will not update more frequently than align_ms, align_ms also adds delay to bar */
-const unsigned int align_ms = 5;
+const unsigned int align_ms = 20;
 
 /* delimiter between modules */
-const char delim[] = "  ";
+const char delim[] = " · ";
