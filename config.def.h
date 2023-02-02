@@ -6,6 +6,7 @@ struct modules mdl[] = {
   /* when .no_delim is set to 1 then no delimeter is added between this and next module */
   /* icon adds icon before text from module */
   {interface, .str = "wlan0", .icon = " "},
+  //{mpd}, // to use, enable MPD in config.mk
   {backlight, .str = "intel_backlight"},
   {battery, .str = "BAT0", .num = 3},
   {run_command, .str = "date '+%a %m.%d'", .num = 240, .icon = "📅 "},
