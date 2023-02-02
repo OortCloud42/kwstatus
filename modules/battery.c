@@ -26,16 +26,16 @@
 
 /* battery level in % this option is for batteries that stop charging and do
  * not indicate they are full, otherwise set it to 100 */
-#define FULL_CHARGE 90
+#define FULL_CHARGE 98
 /* command to execute when battery indicate is full or reach FULL_CHARGE charge */
 #define FULL_CHARGE_CMD "dunstify -r 121 'Battery is full'"
 
 /* first step in low charge */
-#define LOW_CHARGE 20
+#define LOW_CHARGE 10
 #define LOW_CHARGE_CMD "dunstify -r 122 -u critical 'Battery is low'"
 
 /* last warning in low charge */
-#define CRITICAL_CHARGE 15
+#define CRITICAL_CHARGE 5
 #define CRITICAL_CHARGE_CMD "dunstify -r 123 -u critical 'Battery on critical level!'"
 
 /* end of configuration */
