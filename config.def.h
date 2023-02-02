@@ -5,13 +5,11 @@ struct modules mdl[] = {
   /* function, .str | .num | .no_delim | .icon */
   /* when .no_delim is set to 1 then no delimeter is added between this and next module */
   /* icon adds icon before text from module */
-  {battery, .str = "BAT0", .num = 3},
-  {pulse},
+  {interface, .str = "wlan0", .icon = " "},
   {backlight, .str = "intel_backlight"},
-  {disk, .str = "/", .num = 80, .icon = "💾 "},
+  {battery, .str = "BAT0", .num = 3},
   {run_command, .str = "date '+%a %m.%d'", .num = 240, .icon = "📅 "},
   {clockm, .str = "%i %02H:%02M:%02S", .num = 1},
-  {interface, .str = "wlan0", .icon = " "},
 };
 
 /* bar will not update more frequently than align_ms, align_ms also adds delay to bar */
